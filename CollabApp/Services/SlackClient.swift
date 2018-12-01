@@ -47,7 +47,7 @@ class SlackClient {
     public func conversationsHistory(channelId: String, completion: @escaping(JSON, Error?) -> Void) {
         self.getRequest(method: "conversations.history", parameters: [
             "channel": channelId,
-            "limit": 1000,
+            "limit": 100,
             ]).responseJSON { response in
                 switch response.result {
                 case .success:

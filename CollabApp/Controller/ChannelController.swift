@@ -7,6 +7,7 @@ class ChannelController: ClientAccesingControllerBase {
         self.getClient().conversationsList() { response, error in
             for (_,subJson):(String, JSON) in response {
                 let channel:Channel = Channel()
+                
                 if subJson["is_member"].bool == false {
                     continue
                 }
