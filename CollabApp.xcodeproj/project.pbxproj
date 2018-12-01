@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		453BE9F2B142F833160E5D35 /* Pods_SlackDeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0326046FAA5D1BFADB615B1D /* Pods_SlackDeskTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6EAF2CF921B205660017A798 /* Pods_CollabApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 753D62776A7198FBCFB488A0 /* Pods_CollabApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8ED6346B941508D3FEB9F479 /* Pods_CollabAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E51587F7F469FFF74783F3C /* Pods_CollabAppUITests.framework */; };
 		9F635C464AF44E3417EEAA36 /* Pods_CollabAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A857ABA3344866319638793 /* Pods_CollabAppTests.framework */; };
-		A3C170E076862FC3C15A1E01 /* Pods_SlackDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81D157E1414BF1AA7E648E5 /* Pods_SlackDesk.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A60951E5BDA6D9DB34C0E4C2 /* Pods_SlackDeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E6BE2D813EB02DDD11DFDE /* Pods_SlackDeskUITests.framework */; };
 		D41E88B02180BD1100CED32F /* ConnectionSplitViewControllerUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E88AF2180BD1100CED32F /* ConnectionSplitViewControllerUsers.swift */; };
 		D41E88B22180BD2A00CED32F /* ConnectionSplitViewControllerChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E88B12180BD2A00CED32F /* ConnectionSplitViewControllerChannels.swift */; };
@@ -48,8 +48,6 @@
 		D4BFE71D21712D1B001945E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BFE71C21712D1B001945E2 /* Assets.xcassets */; };
 		D4BFE72021712D1B001945E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BFE71E21712D1B001945E2 /* Main.storyboard */; };
 		D4BFE73721712D1B001945E2 /* CollabAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BFE73621712D1B001945E2 /* CollabAppUITests.swift */; };
-		D4F88AC72171CF5700A5D094 /* Pods_SlackDesk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D81D157E1414BF1AA7E648E5 /* Pods_SlackDesk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E3633432ED6F6E8315FD6AF0 /* Pods_CollabApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753D62776A7198FBCFB488A0 /* Pods_CollabApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D4F88AC72171CF5700A5D094 /* Pods_SlackDesk.framework in Embed Frameworks */,
+				6EAF2CF921B205660017A798 /* Pods_CollabApp.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -152,8 +150,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C170E076862FC3C15A1E01 /* Pods_SlackDesk.framework in Frameworks */,
-				E3633432ED6F6E8315FD6AF0 /* Pods_CollabApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +431,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Rob Harings";
 				TargetAttributes = {
 					D4BFE71421712D1A001945E2 = {
@@ -857,12 +853,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 514DFD55D9088EDA7097EE20 /* Pods-CollabApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 24KGSSH7GA;
+				DEVELOPMENT_TEAM = P4A64R369L;
 				INFOPLIST_FILE = CollabApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,12 +874,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5A989BBE44F63BE35E68DF0 /* Pods-CollabApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 24KGSSH7GA;
+				DEVELOPMENT_TEAM = P4A64R369L;
 				INFOPLIST_FILE = CollabApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
